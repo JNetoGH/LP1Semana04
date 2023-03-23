@@ -4,7 +4,6 @@ namespace Power2Method
 {
     class Program
     {
-        
         static void Main(string[] args)
         {
             Console.WriteLine("until 5: ");
@@ -25,7 +24,5 @@ namespace Power2Method
             for (int i = 1; i <= (1 << n); i = i << 1)
                 Console.WriteLine(i);
         }
-        
     }
-
 }
