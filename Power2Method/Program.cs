@@ -48,6 +48,5 @@ namespace Power2Method
             for (int i = 1 << n1; i <= (1 << n2); i = i << 1)
                 Console.WriteLine(i);
         }
-        
     }
 }
