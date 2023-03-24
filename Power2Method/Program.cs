@@ -10,6 +10,9 @@ namespace Power2Method
         /// <param name="args">passed at the Project execution (Not Required to This Program)</param>
         static void Main(string[] args)
         {
+            Console.WriteLine("\nfrom 3 until 5: ");
+            PowersOf2UntilN(3, 5);   
+            
             Console.WriteLine("\nuntil 5: ");
             PowersOf2Until5();
             
@@ -26,12 +29,23 @@ namespace Power2Method
         private static void PowersOf2Until5() => PowersOf2UntilN(5);
         
         /// <summary>
-        /// Prints on the console, the powers of 2 until N
+        /// Prints on the console, the powers of 2 from 0 until N
         /// </summary>
         /// <param name="n">Represents the end of the range of powers of 2 to be printed: (0 to N)</param>
         private static void PowersOf2UntilN(int n)
         {
             for (int i = 1; i <= (1 << n); i = i << 1)
+                Console.WriteLine(i);
+        }
+        
+        /// <summary>
+        /// Prints on the console, the powers of 2 from n1 until n1
+        /// </summary>
+        /// <param name="n1">the start of the range</param>
+        /// <param name="n2">the end of the range</param>
+        private static void PowersOf2UntilN(int n1, int n2)
+        {
+            for (int i = 1 << n1; i <= (1 << n2); i = i << 1)
                 Console.WriteLine(i);
         }
         
