@@ -6,10 +6,8 @@ namespace Lucas
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Lucas(0));
-            Console.WriteLine(Lucas(2));
-            Console.WriteLine(Lucas(7));
-
+            int index_in_index = int.Parse(args[0]);
+            Console.WriteLine(Lucas(index_in_index));
         }
 
         private static int Lucas(int n)
