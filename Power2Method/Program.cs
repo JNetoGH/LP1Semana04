@@ -7,7 +7,7 @@ namespace Power2Method
         /// <summary>
         /// This method is the entry point of the program 
         /// </summary>
-        /// <param name="args">passed at the Project execution (Not Required to This Program)</param>
+        /// <param name="args">passed at the Project execution (not required to this program)</param>
         static void Main(string[] args)
         {
             Console.WriteLine("\nfrom 3 until 5: ");
